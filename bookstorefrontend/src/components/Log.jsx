@@ -16,7 +16,7 @@ function Log() {
       email:data.email,
       password:data.password,
     }
-    await axios.post("http://localhost:5000/userdata/login",userInfo)
+    await axios.post("https://bookstoresignuptset.vercel.app//userdata/login",userInfo)
     .then((res)=>{
       console.log(res.data)
       if(res.data){
