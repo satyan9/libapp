@@ -1,5 +1,4 @@
 import React from 'react'
-import Signup from './Signup'
 import { useForm } from "react-hook-form"
 import { Link } from 'react-router-dom'
 import axios from 'axios'
@@ -16,7 +15,7 @@ function Log() {
       email:data.email,
       password:data.password,
     }
-    await axios.post("https://bookstoresignuptset.vercel.app//userdata/login",userInfo)
+    await axios.post("https://bookstoresignup.onrender.com/userdata/login",userInfo)
     .then((res)=>{
       console.log(res.data)
       if(res.data){
